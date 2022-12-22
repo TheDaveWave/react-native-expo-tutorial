@@ -3,16 +3,16 @@ import { StyleSheet, Text, View, Image } from "react-native";
 import Button from "./components/Button";
 import ImageViewer from "./components/ImageViewer";
 
-const placeHolderImage = require('./assets/images/background-image.png')
+const placeHolderImage = require("./assets/images/background-image.png");
 
 export default function App() {
   return (
     <View style={styles.container}>
       <View style={styles.imageContainer}>
-        <ImageViewer placeholderImageSource={placeHolderImage}/>
+        <ImageViewer placeholderImageSource={placeHolderImage} />
       </View>
       <View style={styles.footerContainer}>
-        <Button label="Choose a photo"/>
+        <Button label="Choose a photo" theme="primary" />
         <Button label="Use this photo" />
       </View>
       <StatusBar style="auto" />
@@ -32,6 +32,6 @@ const styles = StyleSheet.create({
   },
   footerContainer: {
     flex: 1 / 3,
-    alignItems: 'center',
+    alignItems: "center",
   },
 });
