@@ -37,6 +37,16 @@ export default function EmojiSticker({ imageSize, stickerSource }) {
     },
   });
 
+//   try to make a custom component to handle multiple tap gestures
+
+//   const onTripleTap = useAnimatedGestureHandler({
+//     onActive: () => {
+//       if (scaleImage.value) {
+//         scaleImage.value = scaleImage.value / 2;
+//       }
+//     },
+//   });
+
   const containerStyle = useAnimatedStyle(() => {
     return {
       transform: [
